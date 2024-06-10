@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100..900&display=swap');
+
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #444;
+    padding: 0.5rem;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+}
+
+.card {
+    background-color: #f9f9f9;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.card-header {
+    background-color: #005b96;
+    color: #fff;
+    padding: 0.5rem;
+    text-align: center;
+    border-radius: 8px 8px 0 0;
+    margin: -1rem -1rem 1rem -1rem;
+    font-weight: bold;
+}
+
+.about-me-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    flex-direction: row-reverse;
+}
+
+.about-me-content img {
+    width: 150px;
+    height: auto;
+    border-radius: 8px;
+    margin-left: 2rem;
+}
+
+.flag-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.flag-container .flag-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 2rem;
+}
+
+.flag-container img {
+    width: 150px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.flag-container .flag-caption {
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+.web-dev-resources {
+    display: flex;
+    flex-direction: column;
+}
+
+.resource-list {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.resource-list ul {
+    margin: 0;
+    padding: 0;
+    list-style: disc;
+    padding-left: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+.highlight {
+    color: yellow;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #ddd;
+    margin: 1rem 0;
+}

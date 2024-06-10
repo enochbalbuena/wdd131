@@ -3,9 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>WDD 131 - Dynamic Web Fundamentals - Enoch Balbuena</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Enoch Balbuena">
+    <meta name="author" content="Enoch Balbuena">
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
-    <h1>WDD 131</h1>
+    <header>
+        <h1>WDD 131: Dynamic Web Fundamentals - <span class="highlight">Enoch Balbuena</span></h1>
+        <nav>
+            <a href="https://www.linkedin.com/in/enoch-">LinkedIn</a>
+            <a href="https://byui.instructure.com/">I-Learn</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures">Scripture</a>
+            <a href="#">Final Project</a>
+        </nav>
+    </header>
+    <main>
+        <section class="card about-me">
+            <h2 class="card-header">About Me</h2>
+            <div class="about-me-content">
+                <img src="images/enoch.png" alt="Enoch's photo">
+                <p>My name is Enoch. I was born in Mexico and currently live in Puebla. I work as an Agile Project Analyst. I love to play videogames and listening to music. I am passionate about AI, data science, and data analysis.</p>
+            </div>
+            <h2>Puebla, Mexico</h2>
+            <hr>
+            <div class="flag-container">
+                <div class="flag-wrapper">
+                    <img src="images/mexico-flag.webp" alt="Official Flag of Mexico" class="flag">
+                    <p class="flag-caption"><em>Official Flag of Mexico</em></p>
+                </div>
+                <p>Mexico is the 14th largest country in the world and is located in North America. It is home to 10-12% of the world's biodiversity, with a significant number of species endemic to the region. Mexico is best known for its rich cultural heritage, ancient civilizations such as the Aztecs and Mayans, vibrant festivals, and diverse landscapes ranging from deserts to lush rainforests.</p>
+            </div>
+        </section>
+        <section class="card web-dev-resources">
+            <h2 class="card-header">Web Dev Resources</h2>
+            <div class="resource-list">
+                <ul>
+                    <li><a href="https://dev.to">Dev.to Community</a></li>
+                    <li><a href="https://www.smashingmagazine.com">Smashing Magazine</a></li>
+                    <li><a href="https://css-tricks.com">CSS Tricks</a></li>
+                    <li><a href="https://www.w3schools.com">W3 Schools</a></li>
+                    <li><a href="https://www.udemy.com">Udemy</a></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Enoch Balbuena, Puebla/Mexico.</p>
+        <p id="lastModified" class="highlight"></p>
+    </footer>
 </body>
 </html>
