@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Place Title</title>
+    <link rel="stylesheet" href="/wdd131/styles/place.css">
+    <script src="/wdd131/scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Mexico</h1>
+        <div class="green-line"></div>
+    </header>
+    <main>
+        <picture>
+            <source srcset="/wdd131/images/mexico-small.webp" media="(max-width: 600px)">
+            <source srcset="/wdd131/images/mexico-large.webp" media="(min-width: 601px)">
+            <img src="/wdd131/images/mexico.webp" alt="Mexico">
+        </picture>
+        <section id="data">
+            <div class="section-header">
+                <h2>Data</h2>
+            </div>
+            <p><span class="label">Area:</span> 1,964,375 sq km</p>
+            <p><span class="label">Population:</span> 128,932,753</p>
+            <p><span class="label">Capital:</span> Mexico City</p>
+            <p><span class="label">Languages:</span> Spanish</p>
+            <p><span class="label">Currency:</span> Mexican Peso</p>
+            <p><span class="label">Time Zone:</span> UTC-6</p>
+            <p><span class="label">Calling Code:</span> +52</p>
+            <p><span class="label">Internet TLD:</span> .mx</p>
+        </section>
+        <section id="weather">
+            <div class="section-header">
+                <h2>Weather</h2>
+                <img src="/wdd131/images/weather-icon.svg" alt="Weather Icon" class="weather-icon">
+            </div>
+            <p><span class="label">Temperature:</span> 20 °C</p>
+            <p><span class="label">Conditions:</span> Partly Cloudy</p>
+            <p><span class="label">Wind:</span> 10 km/h</p>
+            <p><span class="label">Wind Chill:</span> <span id="windchill"></span></p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Enoch Balbuena, Mexico</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
