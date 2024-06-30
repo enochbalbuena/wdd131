@@ -91,6 +91,12 @@ section {
 .weather-icon {
     width: 24px;
     height: 24px;
+    display: none;
+}
+
+.weather-emoji {
+    display: none;
+    font-size: 24px;
 }
 
 section p {
@@ -172,8 +178,11 @@ footer p {
     }
 
     .weather-icon {
-        width: 24px;
-        height: 24px;
+        display: block;
+    }
+
+    .weather-emoji {
+        display: none;
     }
 
     section p {
@@ -189,7 +198,7 @@ footer p {
     }
 }
 
-@media (min-width: 601px) and (max-width: 800px) {
+@media (min-width: 601px){
     main {
         display: block;
     }
@@ -205,5 +214,12 @@ footer p {
     section {
         text-align: left;
     }
-}
 
+    .weather-icon {
+        display: none;
+    }
+
+    .weather-emoji {
+        display: block;
+    }
+}
