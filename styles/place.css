@@ -10,7 +10,7 @@ body {
 }
 
 header {
-    background-color: #c8102e;
+    background-color: #5c1622;
     color: white;
     text-align: center;
     padding: 20px;
@@ -75,7 +75,7 @@ section {
 .section-header {
     display: flex;
     align-items: center;
-    background-color: rgba(0, 120, 73, 0.8);
+    background-color: rgba(7, 45, 30, 0.8);
     padding: 5px 20px;
     margin: -20px 0 10px -20px;
     position: relative;
@@ -103,7 +103,7 @@ section .label {
 }
 
 footer {
-    background-color: #c8102e;
+    background-color: #5c1622;
     color: white;
     text-align: center;
     padding: 10px;
@@ -196,14 +196,10 @@ footer p {
     
     #data {
         position: absolute;
-        top: 10%;
-        left: 2%;
     }
 
     #weather {
         position: absolute;
-        bottom: 10%;
-        right: 2%;
     }
 
     section {
