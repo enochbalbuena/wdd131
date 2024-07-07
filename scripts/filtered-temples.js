@@ -86,18 +86,42 @@ document.addEventListener("DOMContentLoaded", function() {
 
     const gallery = document.querySelector('.gallery');
 
+    function createTempleCard(temple) {
+        const templeCard = document.createElement('div');
+        templeCard.className = 'temple-card';
+
+        const templeTitle = document.createElement('h3');
+        templeTitle.textContent = temple.templeName;
+
+        const templeLocation = document.createElement('p');
+        templeLocation.innerHTML = `<strong>Location:</strong> ${temple.location}`;
+
+        const templeDedicated = document.createElement('p');
+        templeDedicated.innerHTML = `<strong>Dedicated:</strong> ${temple.dedicated}`;
+
+        const templeSize = document.createElement('p');
+        templeSize.innerHTML = `<strong>Size:</strong> ${temple.area} sq ft`;
+
+        const templeImage = document.createElement('img');
+        templeImage.src = temple.imageUrl;
+        templeImage.alt = temple.templeName;
+        templeImage.width = 400;
+        templeImage.height = 250;
+        templeImage.loading = 'lazy';
+
+        templeCard.appendChild(templeTitle);
+        templeCard.appendChild(templeLocation);
+        templeCard.appendChild(templeDedicated);
+        templeCard.appendChild(templeSize);
+        templeCard.appendChild(templeImage);
+
+        return templeCard;
+    }
+
     function displayTemples(filteredTemples) {
         gallery.innerHTML = '';
         filteredTemples.forEach(temple => {
-            const templeCard = document.createElement('div');
-            templeCard.className = 'temple-card';
-            templeCard.innerHTML = `
-                <h3>${temple.templeName}</h3>
-                <p><strong>Location:</strong> ${temple.location}</p>
-                <p><strong>Dedicated:</strong> ${temple.dedicated}</p>
-                <p><strong>Size:</strong> ${temple.area} sq ft</p>
-                <img src="${temple.imageUrl}" alt="${temple.templeName}" width="400" height="250" loading="lazy">
-            `;
+            const templeCard = createTempleCard(temple);
             gallery.appendChild(templeCard);
         });
     }
@@ -127,6 +151,5 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 
-    // Display all temples initially
     displayTemples(temples);
 });
