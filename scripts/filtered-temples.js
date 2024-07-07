@@ -96,7 +96,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 <p><strong>Location:</strong> ${temple.location}</p>
                 <p><strong>Dedicated:</strong> ${temple.dedicated}</p>
                 <p><strong>Size:</strong> ${temple.area} sq ft</p>
-                <img src="${temple.imageUrl}" alt="${temple.templeName}" loading="lazy">
+                <img src="${temple.imageUrl}" alt="${temple.templeName}" width="400" height="250">
             `;
             gallery.appendChild(templeCard);
         });
@@ -127,5 +127,5 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 
-    displayTemples(temples); // Display all temples by default
+    displayTemples(temples);
 });
