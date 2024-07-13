@@ -17,4 +17,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const lastModifiedElement = document.getElementById("lastModified");
     lastModifiedElement.textContent = document.lastModified;
+
+    const reviewForm = document.getElementById("reviewForm");
+    reviewForm.addEventListener("submit", () => {
+        let numReviews = localStorage.getItem("numReviews") || 0;
+        numReviews++;
+        localStorage.setItem("numReviews", numReviews);
+    });
 });
