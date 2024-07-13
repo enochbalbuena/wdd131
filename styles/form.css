@@ -90,3 +90,23 @@ label .required {
     margin-left: 5px;
 }
 
+div.checkbox-label {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.checkbox-label input[type="checkbox"] {
+    margin-right: 0.5rem;
+    flex: 0 0 auto;
+}
+
+.checkbox-label label {
+    margin: 0;
+    flex: 1;
+}
