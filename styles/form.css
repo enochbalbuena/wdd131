@@ -85,4 +85,8 @@ footer p {
     margin: 0;
 }
 
+label .required {
+    color: #81130b;
+    margin-left: 5px;
+}
 
