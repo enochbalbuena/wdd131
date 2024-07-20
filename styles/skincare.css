@@ -1,0 +1,390 @@
+body, h1, h2, h3, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #FFFFFF;
+    color: #000000;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+header, footer {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #104E8B;
+    color: #FFFFFF;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+}
+
+nav {
+    position: relative;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+nav ul {
+    display: flex;
+    gap: 1rem;
+}
+
+nav ul li a {
+    color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav ul li a.active, nav ul li a:hover {
+    color: #fff9c1;
+}
+
+.main {
+    padding: 2rem 1rem;
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.hero {
+    position: relative;
+    color: white;
+    background-color: #f0f8ff;
+    padding-top: 5rem;
+}
+
+.hero-text {
+    background: rgba(9, 42, 75, 0.9);
+    padding: 2rem;
+    border-radius: 10px;
+    max-width: 40%;
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    transform: translateY(-50%);
+}
+
+.hero-text h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    color: #FFFFFF;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+    color: #FFFFFF;
+}
+
+.hero-buttons .btn-secondary {
+    background-color: #ffd900;
+    color: #000000;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 1rem;
+}
+
+.hero-image img {
+    width: 100%;
+    height: auto;
+}
+
+.features {
+    padding: 6rem 1rem 2rem;
+    text-align: center;
+    padding-bottom: 4rem;
+}
+
+.features h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    color: #104E8B;
+    margin-bottom: 2rem;
+}
+
+.feature {
+    margin-bottom: 2rem;
+}
+
+.feature img {
+    width: 350px;
+    height: 150px;
+    margin-bottom: 1rem;
+}
+
+.feature h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    color: #104E8B;
+}
+
+.feature p {
+    font-size: 1rem;
+    color: #000000;
+}
+
+footer {
+    background-color: #191970;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.routines {
+    padding: 2rem 1rem;
+    text-align: center;
+    padding-bottom: 4rem;
+}
+
+.routines h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    color: #104E8B;
+    margin-bottom: 2rem;
+}
+
+.routine {
+    margin-bottom: 2rem;
+    text-align: left;
+    max-width: 600px;
+    margin: 2rem auto;
+}
+
+.routine h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    color: #104E8B;
+    margin-bottom: 0.5rem;
+}
+
+.routine p {
+    font-size: 1rem;
+    color: #000000;
+}
+
+.tips {
+    padding: 2rem 1rem;
+    text-align: center;
+    padding-bottom: 4rem;
+}
+
+.tips h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    color: #104E8B;
+    margin-bottom: 2rem;
+}
+
+.tip {
+    margin-bottom: 2rem;
+    text-align: left;
+    max-width: 600px;
+    margin: 2rem auto;
+}
+
+.tip h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    color: #104E8B;
+    margin-bottom: 0.5rem;
+}
+
+.tip p {
+    font-size: 1rem;
+    color: #000000;
+}
+
+.contact-us {
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.contact-us h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    color: #104E8B;
+    margin-bottom: 2rem;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #104E8B;
+    color: #FFFFFF;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: #fff9c1;
+}
+
+@media (max-width: 900px) {
+    .menu-icon {
+        display: block;
+        position: absolute;
+        right: 1rem;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #104E8B;
+        width: auto;
+        min-width: 150px;
+        text-align: left;
+        z-index: 1000;
+    }
+
+    nav ul li {
+        margin: 0;
+        width: 100%;
+        border-bottom: 1px solid #fff;
+    }
+
+    nav ul li a {
+        padding: 1rem;
+        display: block;
+        width: 100%;
+        background-color: #104E8B;
+        color: #FFFFFF;
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    .hero-text {
+        position: static;
+        transform: none;
+        background: rgba(9, 42, 75, 0.9);
+        max-width: 90%;
+        margin: 1rem auto;
+        text-align: center;
+    }
+
+    .hero-image {
+        order: 1;
+    }
+
+    .hero-text {
+        order: 2;
+    }
+
+    .hero-text h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero-text p {
+        font-size: 1rem;
+    }
+
+    .hero-buttons {
+        display: flex;
+        justify-content: center;
+    }
+
+    .hero-buttons .btn-secondary {
+        padding: 0.5rem 1rem;
+    }
+
+    .features {
+        padding: 6rem 1rem 2rem;
+        text-align: center;
+        padding-bottom: 6rem;
+    }
+
+    .feature {
+        padding: 0 1rem;
+    }
+
+    .routines {
+        padding: 1rem;
+        padding-bottom: 6rem;
+    }
+
+    .routine {
+        padding: 0 1rem;
+    }
+
+    .tips {
+        padding: 1rem;
+        padding-bottom: 6rem;
+    }
+
+    .tip {
+        padding: 0 1rem;
+    }
+
+    .contact-us {
+        padding: 1rem;
+    }
+
+    form {
+        padding: 0 1rem;
+    }
+
+    header, footer {
+        width: 100%;
+    }
+}
